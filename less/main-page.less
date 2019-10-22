@@ -28,6 +28,7 @@ header {
       right: 1rem;
       top: 8rem;
       border-radius: 2rem;
+      animation: fadeIn ease 1s;
     }
   }
   .header2 {
@@ -40,6 +41,7 @@ header {
       top: 16rem;
       left: 1rem;
       border-radius: 2rem;
+      animation: fadeIn ease 3s;
     }
   }
   .header3 {
@@ -52,6 +54,43 @@ header {
       right: 1rem;
       top: 35rem;
       border-radius: 2rem;
+      animation: fadeIn ease 5s;
+    }
+  }
+}
+
+#about30 {
+  z-index: 5;
+  position: relative;
+  top: 45rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  height: 100%;
+  h2 {
+    font-size: 2rem;
+    margin: 1rem;
+    opacity: 1;
+    background-color: rgba(226, 88, 34);
+    padding: 0.5rem;
+    border-radius: 1.2rem;
+  }
+  ul {
+    .displayFlex(column, center, center);
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+    li {
+      font-size: 1.4rem;
+      margin: 1rem;
+      opacity: 1;
+      width: 60%;
+      background-color: rgba(226, 88, 34, 0.5);
+      padding: 0.5rem;
+      border-radius: 1rem;
+    }
+    img {
+      width: 15rem;
+      height: 15rem;
     }
   }
 }

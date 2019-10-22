@@ -12,6 +12,12 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/index.css" />
+
+    <!--Navicon-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!--Icons from fontawesome-->
     <script
       src="https://kit.fontawesome.com/ae80cd04d2.js"
@@ -39,14 +45,49 @@
   <body>
     <div id="page-container">
       <div id="content-wrap">
-        <nav>
-          <div class="logo">
+        <nav class="navbar">
+          <!-- <div class="logo">
             <p><a href="index.html">30before30</a></p>
-          </div>
-          <div class="login">
-            <a class="login" href="">Login</a>
-          </div>
+          </div> -->
+          <!-- Top Navigation Menu -->
+          <h1 class="logo">30before30</h1>
+          <span>
+            <a href="#" onclick="openSlideMenu()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </span>
+
+          <ul class="navbar-nav">
+            <h1 class="logo">30before30</h1>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Login / Signup</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
         </nav>
+
+        <div class="side-nav" id="side-menu">
+          <a class="btn-close" href="#" onclick="closeSlideMenu()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Login / Signup</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <script>
+          function openSlideMenu() {
+            document.getElementById("side-menu").style.width = "50vw";
+
+            document.getElementById("page-container").style.marginRight = "0";
+          }
+
+          function closeSlideMenu() {
+            document.getElementById("side-menu").style.width = "0";
+
+            document.getElementById("page-container").style.marginRight = "0";
+          }
+        </script>
+
         <header>
           <h2>Let's get stuff done.</h2>
           <div class="images">
@@ -65,7 +106,7 @@
         </header>
 
         <section id="about30">
-          <h2>What is <span>30before30?</span></h2>
+          <h2>What is <span>30before30</span>?</h2>
           <ul>
             <li>
               A simple way to organize your goals.

@@ -387,6 +387,10 @@ header h2 {
   background-color: rgba(226, 88, 34);
   padding: 0.5rem;
   border-radius: 1.2rem;
+  text-align: center;
+}
+#about30 h2 span {
+  font-family: "Righteous", cursive;
 }
 #about30 ul {
   display: flex;
@@ -410,39 +414,76 @@ header h2 {
   width: 15rem;
   height: 15rem;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.navbar {
+  background-color: rgba(226, 88, 34, 0.507);
+  overflow: hidden;
+  height: 4rem;
   position: sticky;
   top: 0;
-  background-color: rgba(226, 88, 34, 0.507);
-  padding: 1rem;
   z-index: 999999;
+  display: flex;
+  justify-content: space-between;
 }
-nav hr {
-  border: 1px solid grey;
-  width: 100%;
-}
-nav .logo p {
+.navbar h1 {
   font-family: "Righteous", cursive;
   font-size: 1.6rem;
-  margin: 0.3rem;
-}
-nav .logo p a {
-  text-decoration: none;
+  right: 1rem;
+  top: 1rem;
   color: white;
+  margin: 1rem;
 }
-nav .login a {
-  font-size: 1.6rem;
-  font-family: "Comfortaa", cursive;
-  width: 40%;
+.navbar span a {
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+}
+.navbar span a a i {
+  color: #fff;
+  margin: 1rem;
+  width: 5rem;
+  height: 1rem;
+}
+.navbar ul {
+  margin: 0.5rem 0 0 0;
+  list-style: none;
+  display: none;
+}
+.navbar a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
   text-decoration: none;
-  color: #e25822;
-  padding: 0.5rem;
-  background-color: white;
-  border-radius: 1rem;
-  border: 1px solid #f1bc31;
+  font-size: 1.6rem;
+}
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999999;
+  top: 0;
+  right: 0;
+  background-color: rgba(226, 88, 34, 0.89);
+  overflow-x: hidden;
+  padding-top: 6rem;
+  transition: 0.5s;
+}
+.side-nav a {
+  padding: 1rem 3rem 1rem 1rem;
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  font-family: "Comfortaa", cursive;
+  opacity: 1;
+}
+.side-nav a:hover {
+  color: lightgrey;
+}
+.side-nav .btn-close {
+  position: absolute;
+  top: 0;
 }
 #footer {
   position: absolute;

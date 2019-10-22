@@ -61,22 +61,24 @@
             <h1 class="logo">30before30</h1>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
-            <li><a href="#">Login / Signup</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Signup</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
 
         <div class="side-nav" id="side-menu">
-          <a class="btn-close" href="#" onclick="closeSlideMenu()">&times;</a>
+          <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Login / Signup</a>
+          <a href="#about30">About</a>
+          <a href="#">Login</a>
+          <a href="#">Signup</a>
           <a href="#">Contact</a>
         </div>
 
         <script>
           function openSlideMenu() {
-            document.getElementById("side-menu").style.width = "50vw";
+            document.getElementById("side-menu").style.width = "250px";
 
             document.getElementById("page-container").style.marginRight = "0";
           }
@@ -93,14 +95,21 @@
           <div class="images">
             <!--Opener for images -->
             <div class="header1">
-              <img src="img/header1.jpg" />
+              <img src="img/sanddunes.jpg" />
             </div>
             <div class="header2">
-              <img src="img/header2.jpg" />
+              <img src="img/waitingroom.jpg" />
             </div>
             <div class="header3">
-              <img src="img/header3.jpg" />
+              <img src="img/skateboard1.jpg" />
             </div>
+            <div class="header4">
+              <img src="img/mountaintop.jpg" />
+            </div>
+            <div class="header5">
+              <img src="img/sunsetparty.jpg" />
+            </div>
+            <div class="header6"><img src="img/photography.jpg" /></div>
           </div>
           <!--Closer for images-->
         </header>
@@ -118,9 +127,9 @@
 
             <img src="img/groupchat.svg" />
 
-            <li>Basically, the coolest web manager you'll ever use.</li>
+            <li>Basically, the coolest bucket list you'll ever use.</li>
 
-            <img src="img/moment_to_remember.svg" />
+            <img src="img/todolist.svg" />
           </ul>
         </section>
       </div>
@@ -129,7 +138,7 @@
         <div class="company">
           <h3>30before30</h3>
           <ul type="circle">
-            <li><a href="#">About</a></li>
+            <li><a href="#about30">About</a></li>
             <br />
             <li><a href="#">Jobs</a></li>
             <br />

@@ -1,23 +1,54 @@
-header {
+//container to move all the images and text into the center
+
+#top-content {
+  width: 100%;
+  height: auto;
   display: flex;
-  align-items: center;
-  h2 {
+  justify-content: center;
+  align-content: center;
+  .mainheader h2 {
     font-size: 5rem;
     font-family: @comfortaa;
     z-index: 10;
     position: absolute;
     top: 5rem;
     left: 1rem;
-    color: white;
-    text-shadow: 3px 3px black;
+    background-image: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    text-shadow: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     @media @desktop {
       font-size: 10rem;
       top: 12rem;
       left: 5rem;
-      background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+      background-image: linear-gradient(
+        to right,
+        #ff8177 0%,
+        #ff867a 8%,
+        #ff8c7f 16%,
+        #f99185 24%,
+        #cf556c 32%,
+        #b12a5b 48%,
+        #cf556c 56%,
+        #f99185 62%,
+        #ff8c7f 70%,
+        #ff867a 78%,
+        #ff8177 100%
+      );
       text-shadow: none;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    @media @line-height {
+      position: relative;
     }
   }
 }
@@ -25,34 +56,35 @@ header {
 .images {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-content: center;
 
-  .header1 {
+  img {
+    width: 80%;
+    height: auto;
+    position: absolute;
     z-index: 3;
-    img {
-      width: 80%;
-      height: auto;
-      position: absolute;
-      z-index: 3;
-      right: 1rem;
-      top: 8rem;
-      border-radius: 2rem;
+    right: 1rem;
+    top: 8rem;
+    border-radius: 2rem;
 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-
-      @media @desktop {
-        width: 600px;
-        height: auto;
-      }
-    }
     @media @desktop {
-      z-index: 3;
+      width: 600px;
+      height: auto;
+      top: 8rem;
+      left: 50rem;
+    }
+    @media @overflow {
+      display: none;
     }
   }
+  @media @desktop {
+    z-index: 3;
+  }
+
   .header2 {
     z-index: 2;
+
     img {
       width: 80%;
       height: auto;
@@ -62,13 +94,12 @@ header {
       left: 1rem;
       border-radius: 2rem;
 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       @media @desktop {
         width: 500px;
         height: auto;
+      }
+      @media @overflow {
+        display: none;
       }
     }
     @media @desktop {
@@ -86,15 +117,14 @@ header {
       top: 32rem;
       border-radius: 2rem;
 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       @media @desktop {
         width: 500px;
         height: auto;
-        right: 30rem;
+        left: 30rem;
         top: 24rem;
+      }
+      @media @overflow {
+        display: none;
       }
     }
     @media @desktop {
@@ -109,13 +139,12 @@ header {
       z-index: -3;
       border-radius: 2rem;
 
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       left: 35rem;
       top: 2rem;
       @media @mobile {
+        display: none;
+      }
+      @media @overflow {
         display: none;
       }
     }
@@ -133,6 +162,9 @@ header {
       @media @mobile {
         display: none;
       }
+      @media @overflow {
+        display: none;
+      }
     }
   }
   .header6 {
@@ -142,9 +174,12 @@ header {
       position: absolute;
       z-index: 6;
       border-radius: 2rem;
-      left: 58rem;
+      left: 60rem;
       top: 24rem;
       @media @mobile {
+        display: none;
+      }
+      @media @overflow {
         display: none;
       }
     }
@@ -158,6 +193,9 @@ header {
   padding: 1rem;
   border-radius: 2rem;
   height: 100%;
+  @media @line-height {
+    top: 26rem;
+  }
   h2 {
     font-size: 2rem;
     margin: 1rem;

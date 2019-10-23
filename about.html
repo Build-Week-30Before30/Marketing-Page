@@ -30,5 +30,132 @@
       rel="stylesheet"
     />
   </head>
-  <body></body>
+  <nav class="navbar">
+    <!-- <div class="logo">
+        <p><a href="index.html">30before30</a></p>
+      </div> -->
+    <!-- Top Navigation Menu -->
+    <h1 class="logo">30before30</h1>
+    <span>
+      <a href="#" onclick="openSlideMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <h1 class="logo">30before30</h1>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Signup</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="side-nav" id="side-menu">
+    <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="index.html">Home</a>
+    <a href="#about30">About</a>
+    <a href="#">Login</a>
+    <a href="#">Signup</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <script>
+    function openSlideMenu() {
+      document.getElementById("side-menu").style.width = "250px";
+    }
+
+    function closeSlideMenu() {
+      document.getElementById("side-menu").style.width = "0";
+    }
+  </script>
+  <body>
+    <section id="team">
+  <div class="teambox">
+  <img src="img/team/nick.png">
+    <div class="teamtext">
+      <h1>Nick Gallucci</h1>
+      <p>“ Code is like humor. When you have to explain it, it’s bad.” – Cory House</p>
+      <p>Supreme Overlord</p>
+    </div>
+  </div>
+
+  <div class="teambox">
+    <img src="img/team/chelsea.png">
+      <div class="teamtext">
+        <h1>Chelsea Wetzel</h1>
+        <p>"Hey now, you're an all star" - Smash Mouth</p>
+        <p>Front End</p>
+      </div>
+  </div>
+
+    <div class="teambox">
+        <img src="img/team/Jarrod.png">
+          <div class="teamtext">
+            <h1>Jarrod Skahill</h1>
+            <p>"Yeah, I guess"</p>
+            <p>UI Developer</p>
+          </div>
+      </div>
+
+      <div class="teambox">
+          <img src="img/team/kaihaskell.jpg">
+            <div class="teamtext">
+              <h1>Kai Haskell</h1>
+              <p>"40before40 coming soon™"</p>
+              <p>UI Developer</p>
+            </div>
+      </div>  
+
+      <div class="teambox">
+          <img src="img/team/nicole.png">
+            <div class="teamtext">
+              <h1>Nicole Hollis</h1>
+              <p>"It's still magic, even if you know how it's done."</p>
+              <p>Front End</p>
+            </div>
+        </div>
+
+  <div class="teambox">
+      <img src="img/team/Raymond.png">
+        <div class="teamtext">
+          <h1>Raymond Trinh</h1>
+          <p>"Oh god why am I always so tired"</p>
+          <p>Front End</p>
+      </div>
+  </div>
+
+  <div class="teambox">
+      <img src="img/team/Sanny.png">
+        <div class="teamtext">
+          <h1>Sanny Sharief</h1>
+          <p>"Challenge both yourself and others (unless it's to a duel)"</p>
+          <p>Back End</p>
+        </div>
+    </div>
+    <div class="teambox">
+        <img src="img/team/vanna.png">
+          <div class="teamtext">
+            <h1>Vanna Sok</h1>
+            <p>"Two hops this time!"</p>
+            <p>Front End</p>
+          </div>
+      </div>
+  <footer id="footerabout">
+    <div class="company">
+       <h3>30before30</h3>
+           <ul type="circle">
+              <li><a href="about.html">About</a></li>
+                <br />
+              <li><a href="#">Jobs</a></li>
+                  <br />
+             <li><a href="about.html">Team</a></li>
+            </ul>
+      </div>
+    <div class="copywright">
+      <p>© 30before30</p>
+    </div>
+    </footer>
+  </body>
 </html>

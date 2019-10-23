@@ -139,7 +139,6 @@ body {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: 40;
 }
 @media (min-width:1000px) {
   body {
